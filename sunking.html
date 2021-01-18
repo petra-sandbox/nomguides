@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun King's Salvation</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/0c7be93840.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" href="sunking-boss.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="raid-header"></div>
+    <main class="p-5">
+      <div class="container">
+        <div class="boss-title-wrapper row align-items-center mb-5">
+          <div class="col-md-4">
+            <img src="sunking-bossimg.png" alt="Shriekwing model" class="boss-model" />
+          </div>
+          <div class="col-md-8">
+            <h1 class="text-light mb-5">Sun King's Salvation</h1>
+            <div class="row">
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">References</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">WeakAuras</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">Notes</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">Team</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">Guide</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4 p-1">
+                <a href="guides.html">
+                  <div class="card text-white bg-dark">
+                    <div class="card-header icon-header p-3">Other</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+        <!-- <div id="references" class="mb-5">
+        <h2 class="text-light mb-3">References</h2>
+        <ul>
+        <li><a class="text-light" href="https://www.wowhead.com/guides/sun-kings-salvation-kaelthas-sunstrider-castle-nathria-raid-strategy-guide" target="_blank">WoWhead guide</a></li>
+        <li><a class="text-light" href="https://www.youtube.com/watch?v=GXxryvH45bU" target="_blank">FatBoss Beta Preview</a></li>
+        <li><a class="text-light" href="https://tanknotes.com/castle-nathria/sun-king" target="_blank">Tanknotes</a></li></ul>
+      </div> -->
+        <div id="guide">
+          <h2 class="text-light mb-3">Guide</h2>
+          <h3 class="text-light mb-3">Phase 1 - Heal Kael'thas</h3>
+          <p class="text-light">General positioning:</p>
+          <ul>
+            <li class="text-light">Ranged and healers are roughly in the middle</li>
+            <li class="text-light">Tanks and melee depends on what adds are up</li>
+          </ul>
+          <p class="text-light"><strong>Soul Pedistals</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Non-healers can use the <strong>Soul Pedistals</strong>(markers) one person per pedistal at a time to convert health to healing. 2 min debuff after using -> Create rotation of people to use pedistal (stay as long as possible w/o dying).</li>
+          </ul>
+          <p class="text-light"><strong>Rockbound Vanquisher</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Spawns in the middle of the room. Kill it before it gets too many casts of <strong>Concussive Smash</strong> off. Tanking swap on ~3 stacks of <strong>Vanquished</strong> (20 bleed).</li>
+          </ul>
+          <p class="text-light"><strong>Bleakwing Assassin</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Spawns on the sides of the room (groups of 4-6).</li>
+            <li class="text-light">Spread (8y) if you are targetted by <strong>Crimson Flurry</strong>.</li>
+            <li class="text-light">When they reach 30% health they will cast <strong>Return to Stone</strong> healing to full after 8s (Hivemind esq). This is top prio for dps.</li>
+          </ul>
+          <p class="text-light"><strong>Pestering Fiend</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Spawns around the middle (groups of ~8). <strong>Shattering Ruby</strong> does low physical damage to players and everyone 3y around them.</li>
+            <li class="text-light">Interruptable but pointless, doesn't spell lock. Just loosely spread when these are up.</li>
+            <li class="text-light">Typhoon etc to bunch them up as they don't spawn stacked. Explodes when they die (Heroic). Melee need to gtfo when they are close to dying</li>
+          </ul>
+          <p class="text-light"><strong>Soul Infuser</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Top priority add.</li>
+            <li class="text-light">Spawns in 2 small groups on either side of the entrance (groups of 1-3 in each). Either split 50/50 with even CC for the spawns or do one side at a time, try and see what works for us.</li>
+            <li class="text-light">Not tankable. Will rush to the Pedistals and channel Soul Infusion damaging/healing (based on phase) Kael'thas.</li>
+            <li class="text-light">CCable, <strong>Soul Infusion</strong> is also CCable (not interruptable).</li>
+            <li class="text-light">When killed drops an <strong>Infuser's Orb</strong>. Clicking increases healing by 50% for 14s, stacking and refreshing duration. Single player use, biggest single target healer should stagger pick these to extend duration and effect to insane amounts.</li>
+          </ul>
+          <p class="text-light"><strong>High Torturer Darithos</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Present at start, never respawns - low priority to kill</li>
+          </ul>
+          <div class="card mb-5">
+            <div class="card-header only-mythic p-1">
+              <span>Mythic</span>
+            </div>
+            <div class="card-body">
+              <p class="text-light"><strong>Cloak of Flames</strong></p>
+              <ul>
+                <li class="text-light">Occasional healing absorb on Kael'thas. 6 seconds to heal 2 million and interrupt, otherwise we wipe</li>
+              </ul>
+            </div>
+          </div>
+          <h3 class="text-light">Phase 2 - Kill Kael'thas @ 40% and 90%</h3>
+          <p class="text-light"><strong>Shade of Kael'thas</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Spawns in the middle of the room with 60% first time, 10% second time</li>
+            <li class="text-light">Despawns after losing 10% health, going back to P1</li>
+            <li class="text-light">Adds from P1 remain, make sure we transition smoothly. Unsure if they keep spawning in P2</li>
+            <li class="text-light">Remaining adds > Boss. If P1 adds spawn, find a nice balance, still wanting to get out of P2 ASAP</li>
+          </ul>
+          <p class="text-light"><strong>Fiery Strike</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Tank ability, cone attack. Swap at 3 stacks</li>
+            <li class="text-light">General P2 position: Active tank in front of boss, rest of raid loosely stacked behind boss</li>
+          </ul>
+          <p class="text-light">Shade of Kael'thas gains energy over time, at 100 energy he casts <strong>Blazing Surge</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">Large 40y frontal cone. Doesn't track the player (side steppable)</li>
+            <li class="text-light">Beta notes: Listed to spawn fire patches but didn't. If this is the case, bait this close to a wall to save space</li>
+          </ul>
+          <p class="text-light"><strong>Reborn Phoenix</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">2 spawns on either side of the Shade of Kael'thas</li>
+            <li class="text-light">Fixates random players. Will just melee for some physical damage</li>
+            <li class="text-light">Every 2.5 will do damage to everyone within 6y and leave a patch of fire</li>
+            <li class="text-light">Ranged dps prio. CCable, keep in place to reduce fire on ground</li>
+            <li class="text-light">When killed they slowly regenerate</li>
+            <li class="text-light">Despawns when going back to P1 or fight is over</li>
+          </ul>
+          <p class="text-light"><strong>Ember Blast</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">A random player explodes after 5 seconds applying 6 stacks of <strong>Lingering Embers</strong></li>
+            <li class="text-light">Group soak to split both damage and stacks of Lingering Embers</li>
+            <li class="text-light">Spawns fire patches when detonating, place it at the edge / low traffic area</li>
+          </ul>
+          <p class="text-light"><strong>Fire patches</strong></p>
+          <ul class="mb-3">
+            <li class="text-light">They will remain going into P1 for approx 1 min</li>
+          </ul>
+          <div class="card mb-5">
+            <div class="card-header only-mythic p-1">
+              <span>Mythic</span>
+            </div>
+            <div class="card-body">
+              <p class="text-light"><strong>Cloak of Flames</strong></p>
+              <ul class="mb-3">
+                <li class="text-light">Occasional damage absorb on Shade of Kael'thas, top priority</li>
+                <li class="text-light"> Might have to assign dps cooldown if we struggle with regular dps switching</li>
+              </ul>
+              <p class="text-light"><strong>Reborn Phoenix </strong></p>
+              <ul>
+                <li class="text-light">Doesn't despawn when going back to P1</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <div class="card-header only-mythic p-1">
+              <span>Mythic</span>
+            </div>
+            <div class="card-body">
+              <h3 class="text-light">Mythic specifics</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
