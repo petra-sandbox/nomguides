@@ -1,133 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 :root {
-    --main-bg-dark: #171717;
-    --tiles-bg: #292929;
-    --highlight: #c18949;
+  --main-bg-dark: #171717;
+  --tiles-bg: #292929;
+  --highlight: #c18949;
+  --highlightHover: #d8a161;
 }
 
 a {
-    color: inherit;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
-    background-color: var(--main-bg-dark);
+  background-color: var(--main-bg-dark);
 }
 
-.boss-header {
-    padding-left: 75px!important;
+.btn-primary {
+    background-color: var(--highlight);
+    border: solid 2px var(--highlight);
 }
 
-.bosspic {
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 54px;
-    height: 54px;
-    border-radius: 8px;
+.btn-primary:hover {
+    background-color: var(--highlightHover);
+    border: solid 2px var(--highlightHover);
+}
+.framed-img-wrapper {
+    width: 56px;
+    height: 56px;
 }
 
-.boss-title-wrapper {
-    margin-top: -250px;
-}
-
-
-
-.card {
-    background-color: var(--tiles-bg)!important;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-}
-
-.card-header {
-    background-color: var(--tiles-bg)!important;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-    border-radius: 5px!important;
-}
-
-
-.card:hover {
-    background-color: var(--highlight)!important;
-}
-
-.container-600 {
-    max-width: 600px;
-}
-
-.fab, .fas {
-    font-size: 2em;
-}
-
-.fa-chart-bar {
-    color: #009688;
-}
-
-.fa-discord {
-    color: #7646ff;
-}
-
-.fa-file-alt {
-    color: #f8772e;
-}
-
-.fa-google-drive {
-    color: #45bd62;
-}
-
-.fa-question-circle {
-    color: #14cff6;
-}
-
-.fa-youtube {
-    color: #f02849;
+.framed-img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
 }
 
 .frame {
     position: absolute;
-    top: 1px;
-    left: 0;
+    top: 5px;
+    left: 5px;
+  }
+
+.card {
+  background-color: var(--tiles-bg) !important;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.card-header {
+  background-color: var(--tiles-bg) !important;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px !important;
+}
+
+.card:hover {
+  background-color: var(--highlight) !important;
+}
+
+.card.not-clickable {
+    cursor: unset;
+}
+
+.container-600 {
+  max-width: 600px;
+}
+
+.fab,
+.fas {
+  font-size: 2em;
+}
+
+.fa-chart-bar {
+  color: #009688;
+}
+
+.fa-discord {
+  color: #7646ff;
+}
+
+.fa-file-alt,
+.fa-binoculars {
+  color: #f8772e;
+}
+
+.fa-google-drive {
+  color: #45bd62;
+}
+
+.fa-question-circle {
+  color: #14cff6;
+}
+
+.fa-youtube {
+  color: #f02849;
 }
 
 
-h1, h2, h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 h3 {
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .icon-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .icon-header i {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .only-mythic {
-    background-color: #c18949!important;
-    border-bottom-left-radius: 0!important;
-    border-bottom-right-radius: 0!important;
+  background-color: #c18949 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 .only-mythic > span {
-    font-size: .8em;
-    text-transform: uppercase;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: -webkit-linear-gradient(90deg, #171717 0%, rgba(23, 23, 23, 0.9) 20%, rgba(23, 23, 23, 0.5) 60%, rgba(23, 23, 23, 0) 100%);
+  background-image: linear-gradient(0deg, #171717 0%, rgb(23 23 23 / 90%) 20%, rgb(23 23 23 / 50%) 60%, rgb(23 23 23 / 0%) 100%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero > div {
+    z-index: 100;
 }
 
 .raid-header {
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: bottom center;
-    background-image: url(nathriabg.jpg);
+  background-image: url(nathriabg.jpg);
+}
+
+span {
+    font-weight: 400;
+}
+
+/* mounts */
+.kyrian-header {
+  background-image: url(mounts_sl/kyrian_bg.jpg);
+}
+
+.vendor-name > a {
+    color: var(--highlight);
+}
+
+.hide {
+    display: none;
 }
