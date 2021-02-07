@@ -21,17 +21,17 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--highlight);
-    border: solid 2px var(--highlight);
+  background-color: var(--highlight);
+  border: solid 2px var(--highlight);
 }
 
 .btn-primary:hover {
-    background-color: var(--highlightHover);
-    border: solid 2px var(--highlightHover);
+  background-color: var(--highlightHover);
+  border: solid 2px var(--highlightHover);
 }
 .framed-img-wrapper {
-    width: 56px;
-    height: 56px;
+  width: 56px;
+  height: 56px;
 }
 
 .framed-img {
@@ -44,10 +44,10 @@ body {
 }
 
 .frame {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-  }
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
 
 .card {
   background-color: var(--tiles-bg) !important;
@@ -67,7 +67,7 @@ body {
 }
 
 .card.not-clickable {
-    cursor: unset;
+  cursor: unset;
 }
 
 .container-600 {
@@ -104,8 +104,6 @@ body {
   color: #f02849;
 }
 
-
-
 h1,
 h2,
 h3 {
@@ -114,8 +112,8 @@ h3 {
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 1.5em;
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .icon-header {
@@ -160,7 +158,7 @@ h3 {
 }
 
 .hero > div {
-    z-index: 100;
+  z-index: 100;
 }
 
 .raid-header {
@@ -168,7 +166,7 @@ h3 {
 }
 
 span {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 /* mounts */
@@ -176,10 +174,22 @@ span {
   background-image: url(mounts_sl/kyrian_bg.jpg);
 }
 
+.necrolord-header {
+  background-image: url(mounts_sl/necrolord_bg.jpg);
+}
+
+.nightfae-header {
+  background-image: url(mounts_sl/nightfae_bg.jpg);
+}
+
+.venthyr-header {
+  background-image: url(mounts_sl/venthyr_bg.jpg);
+}
+
 .vendor-name > a {
-    color: var(--highlight);
+  color: var(--highlight);
 }
 
 .hide {
-    display: none;
+  display: none;
 }
