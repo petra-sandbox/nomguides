@@ -47,6 +47,11 @@ function showMounts(mounts) {
       clone.querySelector(".other-cost").textContent = mounts.gsx$costother.$t;
     }
 
+    if (mounts.gsx$todo.$t != 0) {
+        clone.querySelector(".todo").classList.remove("hide");
+        clone.querySelector(".todo-desc").textContent = mounts.gsx$todo.$t;
+      }
+      
     clone.querySelector(".wowhead-link").setAttribute("href", `${mounts.gsx$wowheadlink.$t}`);
 
     if (mounts.gsx$comesfrom.$t === "Anima Conductor") {
