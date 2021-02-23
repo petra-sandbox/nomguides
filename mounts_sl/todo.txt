@@ -1,0 +1,5 @@
+add rares to all .html and .js files
+add reputation
+fix img margin
+add transport network to venthyr js and html
+change paragon to reputation in table

@@ -29,24 +29,27 @@ body {
   background-color: var(--highlightHover);
   border: solid 2px var(--highlightHover);
 }
+
 .framed-img-wrapper {
   width: 56px;
   height: 56px;
 }
 
 .framed-img {
-  position: absolute;
-  top: 5px;
-  left: 5px;
   width: 54px;
   height: 54px;
   border-radius: 8px;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .frame {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .card {
@@ -141,7 +144,6 @@ h3 {
   height: 400px;
   background-size: cover;
   background-position: center center;
-
   position: relative;
 }
 
@@ -159,10 +161,6 @@ h3 {
 
 .hero > div {
   z-index: 100;
-}
-
-.raid-header {
-  background-image: url(nathriabg.jpg);
 }
 
 span {
@@ -186,6 +184,13 @@ span {
   background-image: url(mounts_sl/venthyr_bg.jpg);
 }
 
+.sl-all-header {
+  background-image: url(mounts_sl/all_bg.jpg);
+}
+
+.covenant-icon {
+  height: 55px;
+}
 .vendor-name > a {
   color: var(--highlight);
 }

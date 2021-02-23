@@ -12,7 +12,7 @@ function loadJSON(link) {
 }
 
 function showMounts(mounts) {
-  if (mounts.gsx$covenant.$t === "Night fae") {
+  if (mounts.gsx$covenant.$t === "Nightfae") {
     const clone = template.cloneNode("true");
 
     clone.querySelector(".mount-img").setAttribute("src", `${mounts.gsx$img.$t}`);
