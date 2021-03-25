@@ -17,7 +17,7 @@ function showMounts(mounts) {
   if (mounts.gsx$covenant.$t === "All") {
     const clone = template.cloneNode("true");
 
-    clone.querySelector(".mount-img").setAttribute("src", `${mounts.gsx$img.$t}`);
+    //clone.querySelector(".mount-img").setAttribute("src", `${mounts.gsx$img.$t}`);
     clone.querySelector(".mount-name").textContent = mounts.gsx$mountname.$t;
 
     if (mounts.gsx$vendor.$t != 0) {

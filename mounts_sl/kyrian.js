@@ -4,6 +4,9 @@ const animaConductor = document.querySelector("#anima-conductor");
 const campaign = document.querySelector("#campaign");
 const extraFeature = document.querySelector("#extra-feature");
 const renown = document.querySelector("#renown");
+const reputation = document.querySelector("#reputation");
+const rare = document.querySelector("#rare");
+const other = document.querySelector("#other");
 
 function loadJSON(link) {
   fetch(mountListLink)
@@ -15,7 +18,7 @@ function showMounts(mounts) {
   if (mounts.gsx$covenant.$t === "Kyrian") {
     const clone = template.cloneNode("true");
 
-    //clone.querySelector(".mount-img").setAttribute("src", `${mounts.gsx$img.$t}`);
+    //clone.querySelector(".mount-img").setAttribute("src", `img/${mounts.gsx$img.$t}`);
     clone.querySelector(".mount-name").textContent = mounts.gsx$mountname.$t;
 
     if (mounts.gsx$vendor.$t != 0) {
@@ -62,6 +65,10 @@ function showMounts(mounts) {
       extraFeature.appendChild(clone);
     } else if (mounts.gsx$comesfrom.$t === "Renown") {
       renown.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Reputation") {
+      reputation.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Other") {
+      other.appendChild(clone);
     }
   }
 }

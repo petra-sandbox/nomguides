@@ -4,6 +4,10 @@ const animaConductor = document.querySelector("#anima-conductor");
 const campaign = document.querySelector("#campaign");
 const extraFeature = document.querySelector("#extra-feature");
 const renown = document.querySelector("#renown");
+const reputation = document.querySelector("#reputation");
+const rare = document.querySelector("#rare");
+const transport = document.querySelector("#transport");
+const other = document.querySelector("#other");
 
 function loadJSON(link) {
   fetch(mountListLink)
@@ -15,7 +19,7 @@ function showMounts(mounts) {
   if (mounts.gsx$covenant.$t === "Nightfae") {
     const clone = template.cloneNode("true");
 
-    clone.querySelector(".mount-img").setAttribute("src", `${mounts.gsx$img.$t}`);
+    //clone.querySelector(".mount-img").setAttribute("src", `img/${mounts.gsx$img.$t}`);
     clone.querySelector(".mount-name").textContent = mounts.gsx$mountname.$t;
 
     if (mounts.gsx$vendor.$t != 0) {
@@ -51,7 +55,7 @@ function showMounts(mounts) {
       clone.querySelector(".todo").classList.remove("hide");
       clone.querySelector(".todo-desc").textContent = mounts.gsx$todo.$t;
     }
-    
+
     clone.querySelector(".wowhead-link").setAttribute("href", `${mounts.gsx$wowheadlink.$t}`);
 
     if (mounts.gsx$comesfrom.$t === "Anima Conductor") {
@@ -62,6 +66,14 @@ function showMounts(mounts) {
       extraFeature.appendChild(clone);
     } else if (mounts.gsx$comesfrom.$t === "Renown") {
       renown.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Reputation") {
+      reputation.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Rare") {
+      rare.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Transport Network") {
+      transport.appendChild(clone);
+    } else if (mounts.gsx$comesfrom.$t === "Other") {
+      other.appendChild(clone);
     }
   }
 }
