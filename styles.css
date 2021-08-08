@@ -69,6 +69,10 @@ body {
   background-color: var(--highlight) !important;
 }
 
+.card-nohover:hover {
+  background-color: var(--tiles-bg) !important;
+}
+
 .card.not-clickable {
   cursor: unset;
 }
@@ -167,25 +171,8 @@ span {
   font-weight: 400;
 }
 
-/* mounts */
-.kyrian-header {
-  background-image: url(mounts_sl/kyrian_bg.jpg);
-}
-
-.necrolord-header {
-  background-image: url(mounts_sl/necrolord_bg.jpg);
-}
-
-.nightfae-header {
-  background-image: url(mounts_sl/nightfae_bg.jpg);
-}
-
-.venthyr-header {
-  background-image: url(mounts_sl/venthyr_bg.jpg);
-}
-
-.sl-all-header {
-  background-image: url(mounts_sl/all_bg.jpg);
+.text-muted {
+  color: #a2a2a2!important;
 }
 
 .covenant-icon {
